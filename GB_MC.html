@@ -16,11 +16,13 @@
   <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  
+  <script type="text/javascript" src="GB_MC.js"></script>
+  <script type="text/javascript" src="GB_MC_block.js"></script>
+  <link rel="stylesheet" href="GB_MC.css" />
 </head>
 
-<body>
-  <div>
-
-  </div>
+<body onload="init();">
+  <canvas id="cvs" onClick="dirt(12,132);" width="640" height="576"></canvas>
 </body>
 </html>
