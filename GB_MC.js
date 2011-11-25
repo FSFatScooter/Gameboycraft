@@ -44,17 +44,13 @@ function init() {
 
 
 function checker() {
-//	console.log("Checkering display");
 	var pn = 1;
 	ctx.fillStyle = "rgb(255,255,255)";
-	for(var b = 0; b < 144; b++) {
-		console.log("checkpoint!");
-		
+	for(var b = 0; b < 144; b++) {		
 		for(var a = -1; a < 160; a++) {
 			ctx.fillRect(a * sz, b * sz, sz, sz);
 			pn *=(-1);
 			ctx.fillStyle = "rgb("+(127.5+(pn*127.5))+","+(127.5+(pn*127.5))+","+(127.5+(pn*127.5))+")"; // (127.5+(pn*127.5))
 		}
 	}
-	console.log("Done checkering display.");
 }

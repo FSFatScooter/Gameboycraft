@@ -1,0 +1,13 @@
+---Map Format Documentation---
+as of
+
+Maps, having only 2 dimensions to match the screen limitations. 
+They will stored in vertical chunks (much like the original work it 
+is based off of) that reach from the bottom of the world to the top. 
+Sticking to the original content, the number of blocks in one 
+vertical stack will be 128. The number of vertical stacks allotted 
+in a chunk is still undecided but will probably range between 8 an 12.
+
+While the world's horizontal size will be initially limited in size 
+(although to what degree is currently undecided), world generation 
+will be included after an acceptable version is committed. 
