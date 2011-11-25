@@ -24,7 +24,7 @@ function init() {
 	ctx.lineTo(sz * 100, sz * 100);
 	ctx.closePath();
 	ctx.stroke();
-	checker();
+//	checker();
 }
 
 //console.log("red log, standing by");
