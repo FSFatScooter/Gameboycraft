@@ -4,6 +4,25 @@
 
 
 function fakeMap(){
+	Dirt();
+	Grass(12);
+	Snow(24);
+	Sand(36);
+	Wood(48);
+	Leaves(60);
+	Planks(72);
+	Stone(84);
+	Door(0,12,ct);
+	Door(0,24,cb);
+	Door(12,12,ot);
+	Door(12,24,ob);
+	Lightning(24,12);
+	Lightning(24,24);
+	Lightning(24,36)
+	Lightning(24,48,1)
+}
+
+function fakeMap2(){
 //	Stone(12,132);
 //	Stone(12,120);
 	Leaves(12);
