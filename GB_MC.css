@@ -4,13 +4,24 @@ body, html {
 	margin: 0px;
 	border: 0px;
 	padding: 0px;
-	background-color: rgba(40,140,30);
+	background-color: rgb(30,0,30);
 }
 
 #cvs{
 	position: fixed;
+	z-index: 2;
 	left: 50%;
 	top: 50%;
 	margin-left: -320px;
 	margin-top: -288px;
+}
+
+#overlay{
+	position: fixed;
+	z-index: 3;
+	left: 50%;
+	top: 50%;
+	margin-left: -320px;
+	margin-top: -288px;
+	background-color: rgba(30,170,20,.3);
 }
