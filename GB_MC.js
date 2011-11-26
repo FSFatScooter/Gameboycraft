@@ -1,6 +1,8 @@
 var cvs;
 var ctx;
+var olay;
 var sz = 4;
+
 Display = {
 	scale : 4,
 	color : {
@@ -18,12 +20,11 @@ function init() {
 	cvs.style.marginLeft = -(160 * .5 * sz) + "px";
 	cvs.style.marginTop = -(144 * .5 * sz) + "px";
 	ctx = cvs.getContext('2d');
-	ctx.strokeStyle = "#888";
-	ctx.beginPath();
-	ctx.moveTo(sz * 10, sz * 10);
-	ctx.lineTo(sz * 100, sz * 100);
-	ctx.closePath();
-	ctx.stroke();
+	olay = document.getElementById('overlay').style;
+	olay.width = 160*sz+"px";
+	olay.height = 144*sz+"px";
+	olay.marginLeft = cvs.style.marginLeft;
+	olay.marginTop = cvs.style.marginTop;
 //	checker();
 }
 
